@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="outer">
+
+         <h1>Calculator</h1> 
+        <div class="calculator">
+            <input type="text">
+            <div class="row">
+                <button id="b1" onclick="clear1()">AC</button>
+                <button id="b1" onclick="back()">Del</button>
+                <button id="b1"onclick="addNumber('/')">/</button>
+                <button id="b1" onclick="addNumber('*')">X</button>
+            </div>
+
+            <div class="row">
+                <button onclick="addNumber('7')">7</button>
+                <button onclick="addNumber('8')">8</button>
+                <button onclick="addNumber('9')">9</button>
+                <button id="b1" onclick="addNumber('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="addNumber('4')">4</button>
+                <button onclick="addNumber('5')">5</button>
+                <button onclick="addNumber('6')">6</button>
+                <button id="b1" onclick="addNumber('+')">+</button>
+            </div>
+
+            <div class="row">
+                <button onclick="addNumber('1')">1</button>
+                <button onclick="addNumber('2')">2</button>
+                <button onclick="addNumber('3')">3</button>
+                <button id="b1" onclick="addNumber('%')">%</button>
+            </div>
+
+            <div class="row" id="r1">
+                <button onclick="addNumber('0')">0</button>
+                <button onclick="addNumber('00')">00</button>
+                <button id="b1" onclick="addNumber('.')">.</button>
+                <button id="b1"onclick="calculate('=')">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./cal.js"></script>
+</body>
+</html>
